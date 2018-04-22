@@ -1,0 +1,16 @@
+Block Selection
+----------------
+1. press left alt+shift
+2. use arrow buttons to do column or block selection (OR)
+3. use mouse to select the column/block
+
+
+Remove quotes when displaying QString with qDebug
+--------------------------------------------------
+qDebug().noquotes()
+
+
+To set global user identity that will be used for all commits/push
+-------------------------------------------------------------------
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
