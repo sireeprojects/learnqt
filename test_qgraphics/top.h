@@ -6,6 +6,7 @@
 #include <QGraphicsView>
 #include <QBrush>
 #include <QGraphicsItem>
+#include <QDebug>
 
 namespace Ui {
 class top;
@@ -22,9 +23,12 @@ public:
 private slots:
     void on_pushButton_2_clicked();
 
+    void on_pushButton_clicked();
+
 private:
     Ui::top *ui;
     QGraphicsScene *scene;
+    QGraphicsSimpleTextItem *txt;
 };
 
 #endif // TOP_H
