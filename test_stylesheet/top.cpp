@@ -4,27 +4,50 @@
 
 top::top(QWidget *parent):QMainWindow(parent),ui(new Ui::top)
 {
-
-
-    myfont.setFamily("Arial");
-    myfont.setPointSize(10);
-    myfont.setStyleStrategy(QFont::NoAntialias);
     ui->setupUi(this);
-    ui->menuFile->setFont(myfont);
-    ui->menuEdit->setFont(myfont);
-    ui->menuHelp->setFont(myfont);
-    ui->menuBar->setFont(myfont);
+
+    myfont.setFamily("Segoe UI");
+    myfont.setPointSize(10);
+
+    this->setFont(myfont);
+//    ui->menuFile->setFont(myfont);
+//    ui->menuEdit->setFont(myfont);
+//    ui->menuHelp->setFont(myfont);
+//    ui->menuBar->setFont(myfont);
+//    ui->treeWidget->setFont(myfont);
 
     QFile file(":/ss.qss");
     file.open(QFile::ReadOnly);
     QString styleSheet = QLatin1String(file.readAll());
-    ui->menuBar->setStyleSheet(styleSheet);
+    this->setStyleSheet(styleSheet);
 
-    ui->toolBar->setStyleSheet(styleSheet);
-    setCentralWidget(ui->plainTextEdit);
 }
 
 top::~top()
 {
     delete ui;
 }
+
+//void top::on_pushButton_clicked()
+//{
+//    addTreeRoot("A", "Root_first");
+//    addTreeRoot("B", "Root_second");
+//    addTreeRoot("C", "Root_third");
+//}
+
+//void top::addTreeRoot(QString name, QString description)
+//{
+//    QTreeWidgetItem *treeItem = new QTreeWidgetItem(ui->treeWidget);
+//    treeItem->setText(0, name);
+//    treeItem->setText(1, description);
+//    addTreeChild(treeItem, name + "A", "Child_first");
+//    addTreeChild(treeItem, name + "B", "Child_second");
+//}
+
+//void top::addTreeChild(QTreeWidgetItem *parent, QString name, QString description)
+//{
+//    QTreeWidgetItem *treeItem = new QTreeWidgetItem();
+//    treeItem->setText(0, name);
+//    treeItem->setText(1, description);
+//    parent->addChild(treeItem);
+//}

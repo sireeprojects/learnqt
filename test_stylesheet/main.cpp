@@ -3,15 +3,16 @@
 
 int main(int argc, char *argv[])
 {
-    QApplication a(argc, argv);
-    top w;
-    QFont myfont;
-    myfont.setFamily("Arial");
-    myfont.setPointSize(10);
-    myfont.setStyleStrategy(QFont::NoAntialias);
-    w.setFont(myfont);
-//    a.setStyle("Windows");
-    w.show();
+    QApplication app(argc, argv);
+    app.setStyle("Windows");
 
-    return a.exec();
+    QFont myfont;
+    myfont.setFamily("Segoe UI");
+    myfont.setPointSize(10);
+
+    top mainWindow;
+    mainWindow.setFont(myfont);
+    mainWindow.show();
+
+    return app.exec();
 }

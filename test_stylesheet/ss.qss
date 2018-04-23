@@ -1,10 +1,38 @@
 QMenuBar:item:selected {  
-        background: rgba(70, 70, 70, 255); color:white;
-        /*background: rgba(82, 130, 180, 255); color:white;*/
-}
+    background: rgba(0, 120, 215, 255); color:white;
+    }
 
 QMenu:item:selected  {
-        background: rgba(70, 70, 70, 255); color:white;
+    background: rgba(0, 120, 215, 255);
+    color: white;
+    }
+
+QToolButton:hover {
+    background-color: rgba(0, 120, 215, 150);
+    }
+
+/*
+QMenuBar:item {
+    border: none;
+    background: transparent;
+    padding-left:8px;
+    padding-right:8px;
+    padding-top:0px;
+    padding-bottom:0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    }
+*/
+
+QToolBar {
+        border-bottom: 1px solid gray;
+        background: transparent;
+        padding-left:0px;
+        padding-right:0px;
+        padding-top:0px;
+        padding-bottom:0px;
+        margin-left: 0px;
+        margin-right: 0px;
 }
 
-
+/*background: rgba(70, 70, 70, 255);*/
