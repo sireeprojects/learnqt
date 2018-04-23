@@ -3,9 +3,17 @@
 
 int main(int argc, char *argv[])
 {
-    QApplication a(argc, argv);
-    mainWindow w;
-    w.show();
+    QApplication app(argc, argv);
+    app.setStyle("Fusion");
 
-    return a.exec();
+    QFont myfont;
+        myfont.setFamily("Segoe UI");
+        myfont.setPointSize(9);
+
+    mainWindow mainWindow;
+    mainWindow.setWindowTitle("Socket Server");
+    mainWindow.setFont(myfont);
+    mainWindow.show();
+
+    return app.exec();
 }

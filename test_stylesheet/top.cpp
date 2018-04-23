@@ -14,7 +14,6 @@ top::top(QWidget *parent):QMainWindow(parent),ui(new Ui::top)
 //    ui->menuEdit->setFont(myfont);
 //    ui->menuHelp->setFont(myfont);
 //    ui->menuBar->setFont(myfont);
-//    ui->treeWidget->setFont(myfont);
 
     QFile file(":/ss.qss");
     file.open(QFile::ReadOnly);
