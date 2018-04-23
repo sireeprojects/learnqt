@@ -1,0 +1,10 @@
+QMenuBar:item:selected {  
+        background: rgba(70, 70, 70, 255); color:white;
+        /*background: rgba(82, 130, 180, 255); color:white;*/
+}
+
+QMenu:item:selected  {
+        background: rgba(70, 70, 70, 255); color:white;
+}
+
+
