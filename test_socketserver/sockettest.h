@@ -5,12 +5,14 @@
 #include <QObject>
 #include <QDebug>
 
+#define dbg qDebug().noquote()
+
 class SocketTest : public QObject
 {
     Q_OBJECT
 public:
     explicit SocketTest(QObject *parent = nullptr);
-    void connect();
+    void run();
 
 signals:
 
