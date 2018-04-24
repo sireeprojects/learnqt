@@ -4,7 +4,7 @@
 int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
-    app.setStyle("Fusion");
+    app.setStyle("Windows");
 
     QFont myfont;
     myfont.setFamily("Segoe UI");
