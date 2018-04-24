@@ -7,13 +7,13 @@ top::top(QWidget *parent):QMainWindow(parent),ui(new Ui::top)
     ui->setupUi(this);
 
     myfont.setFamily("Segoe UI");
-    myfont.setPointSize(10);
+    myfont.setPointSize(9);
 
     this->setFont(myfont);
-//    ui->menuFile->setFont(myfont);
-//    ui->menuEdit->setFont(myfont);
-//    ui->menuHelp->setFont(myfont);
-//    ui->menuBar->setFont(myfont);
+    ui->menuFile->setFont(myfont);
+    ui->menuEdit->setFont(myfont);
+    ui->menuHelp->setFont(myfont);
+    ui->menuBar->setFont(myfont);
 
     QFile file(":/ss.qss");
     file.open(QFile::ReadOnly);

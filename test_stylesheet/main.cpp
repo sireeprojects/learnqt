@@ -4,11 +4,11 @@
 int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
-    app.setStyle("Windows");
+    app.setStyle("Fusion");
 
     QFont myfont;
     myfont.setFamily("Segoe UI");
-    myfont.setPointSize(10);
+    myfont.setPointSize(9);
 
     top mainWindow;
     mainWindow.setFont(myfont);
