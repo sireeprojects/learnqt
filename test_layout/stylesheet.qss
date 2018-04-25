@@ -1,0 +1,23 @@
+QToolBar {
+    background : transparent;
+    margin: 0px;
+    padding: 0px;
+    }
+
+QToolButton {
+    height: 25px;
+    width: 50px;
+    border: 1px;
+    }
+
+QToolButton:pressed {
+    background-color: rgba(175, 175, 175, 255);
+    }
+
+QToolButton:released {
+    background-color: rgba(175, 175, 175, 255);
+    }
+
+QToolButton:hover {
+    background-color: rgba(200, 200, 200, 255);
+    }

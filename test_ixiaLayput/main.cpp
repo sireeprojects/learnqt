@@ -9,10 +9,10 @@ int main(int argc, char *argv[])
     mainWindow w;
 
     w.setWindowTitle("Stream Properties");
-    w.setWindowFlags(Qt::Dialog                 |
-                     Qt::CustomizeWindowHint    |
-                     Qt::WindowTitleHint        |
-                     Qt::WindowCloseButtonHint);
+//    w.setWindowFlags(Qt::Dialog                 |
+//                     Qt::CustomizeWindowHint    |
+//                     Qt::WindowTitleHint        |
+//                     Qt::WindowCloseButtonHint);
 
 //    QFile file(":/stylesheet.qss");
 //    file.open(QFile::ReadOnly);
