@@ -1,6 +1,6 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2018-04-23T23:03:20
+# Project created by QtCreator 2018-04-27T00:08:06
 #
 #-------------------------------------------------
 
@@ -8,7 +8,7 @@ QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = test_stylesheet
+TARGET = test_qss
 TEMPLATE = app
 
 # The following define makes your compiler emit warnings if you use
@@ -32,6 +32,3 @@ HEADERS += \
 
 FORMS += \
         top.ui
-
-RESOURCES += \
-    res.qrc
