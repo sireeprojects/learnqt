@@ -1,26 +1,19 @@
-QTabWidget#tabWidget::pane {
-    border-bottom: 1px solid #cccccc;
-    border-top: 1px solid #cccccc;
+QPushButton {
+    background-color: rgb(70,70,70);
+    color: white;
+    margin: 0px;
+    border-radius: 5px;
     }
 
-QTabBar#tabWidget::tab {
-    height: 20px;
+QPushButton:pressed {
+    background-color: rgb(70,70,70);
+    color: white;
+    margin: 2px;
+    border: 2px solid blue;
     }
 
-QTabBar#tabfields::tab {
-    height: 20px;
-    }
-
-QTabWidget#tabfields::pane {
-    border-bottom: 1px solid #dddddd;
-    border-top: 1px solid #dddddd;
-    border-left: 1px solid #dddddd;
-    border-right: 1px solid #dddddd;
-    }
-
-QLineEdit {
-    border-bottom: 1px solid #cccccc;
-    border-top: 1px solid #cccccc;
-    border-left: 1px solid #cccccc;
-    border-right: 1px solid #cccccc;
+QPushButton:hover {
+    background-color: rgb(150,150,150);
+    color: white;
+    border: 2px solid red;
     }

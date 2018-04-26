@@ -1,11 +1,17 @@
 #include "top.h"
 #include <QApplication>
+#include <QFile>
 
 int main(int argc, char *argv[])
 {
-    QApplication a(argc, argv);
-    top w;
-    w.show();
+    QApplication app(argc, argv);
 
-    return a.exec();
+    top mainWindow;
+    QFile file(":/stylesheet.qss");
+    file.open(QFile::ReadOnly);
+    QString styleSheet = QLatin1String(file.readAll());
+    mainWindow.setStyleSheet(styleSheet);
+    mainWindow.show();
+
+    return app.exec();
 }

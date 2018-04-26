@@ -32,3 +32,6 @@ HEADERS += \
 
 FORMS += \
         top.ui
+
+RESOURCES += \
+    res.qrc
