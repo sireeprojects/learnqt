@@ -1,0 +1,26 @@
+QTabWidget#tabWidget::pane {
+    border-bottom: 1px solid #cccccc;
+    border-top: 1px solid #cccccc;
+    }
+
+QTabBar#tabWidget::tab {
+    height: 20px;
+    }
+
+QTabBar#tabfields::tab {
+    height: 20px;
+    }
+
+QTabWidget#tabfields::pane {
+    border-bottom: 1px solid #dddddd;
+    border-top: 1px solid #dddddd;
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+    }
+
+QLineEdit {
+    border-bottom: 1px solid #cccccc;
+    border-top: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    }
