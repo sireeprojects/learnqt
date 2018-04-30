@@ -5,6 +5,7 @@
 int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
+    app.setStyle("Fusion");
 
     top mainWindow;
     QFile file(":/stylesheet.qss");

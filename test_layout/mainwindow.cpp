@@ -34,6 +34,7 @@ mainWindow::mainWindow(QWidget *parent):QMainWindow(parent),ui(new Ui::mainWindo
              << "Fixed"
              << "Random";
     ui->combo_mode->addItems(cmb_mode);
+
 }
 
 mainWindow::~mainWindow()
